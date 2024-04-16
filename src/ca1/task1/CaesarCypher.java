@@ -2,53 +2,80 @@
 
 package ca1.task1;
 
-import java.util.Scanner;
-
 public class CaesarCypher
 {
 
 	public static void main(String[] args)
 	{
-		Scanner sc = new Scanner(System.in);
-
-		System.out.print("Enter a message to encrypt: ");
-		String input = sc.nextLine();
-
-		System.out.print("Enter the shift value for the message: ");
-		int offset = sc.nextInt();
+		// Driver code for testing (**not unit testing**)
 		
-		String encodedMessage = encode(input, offset);
+		char [] message_to_encode = {'a', 'b', 'c',};
+		char [] encoded_massage = encode(message_to_encode, 2);
+		for (char c : encoded_massage)
+		{
+			System.out.print(c);
+		}
 		
-		System.out.println("Encoded message:" + encodedMessage);
-
+		System.out.println();
+		
+		char [] message_to_decode = {'c', 'd', 'e'};
+		char [] decoded_massage = decode(message_to_decode, 2);
+		for (char c : decoded_massage)
+		{
+			System.out.print(c);
+		}
 	} // ==========end of psvm==========
 
-//	public char[] encode(char[] input, int offset) 
-	public static String encode(String input, int offset)
+	public static char[] encode(char[] input, int offset)
 	{
-		StringBuilder encodedMessage = new StringBuilder();
-
-		input = input.toLowerCase();
-
-		for (int i = 0; i < input.length(); i++)
+		char[] temp = new char[input.length];
+		for (int i = 0; i < input.length; i++)
 		{
-			char c = input.charAt(i);
-
-			if (Character.isLetter(c))
+			char c = input[i];
+			if ((int) c >= 97 && (int) c <= 122)
 			{
 				c = (char) ((c - 'a' + offset + 26) % 26 + 'a');
+				temp[i] = c;
 			}
-
-			encodedMessage.append(c);
+			else if ((int) c >= 65 && (int) c <= 90)
+			{
+				c = (char) ((c - 'A' + offset + 26) % 26 + 'A');
+				temp[i] = c;
+			}
+			else
+			{
+				temp[i] = c;
+			}
+			
 		}
-
-		return encodedMessage.toString();
-
+		
+		return temp;
 	} // ==========end of encode==========
-
-	public char[] decode(char[] input, int offset)
+	
+	public static char[] decode(char[] input, int offset)
 	{
-		return null;
+		char[] temp = new char[input.length];
+		for (int i = 0; i < input.length; i++)
+		{
+			char c = input[i];
+			if ((int) c >= 97 && (int) c <= 122)
+			{
+				c = (char) ((c - 'a' - offset + 26) % 26 + 'a');
+				temp[i] = c;
+			}
+			else if ((int) c >= 65 && (int) c <= 90)
+			{
+				c = (char) ((c - 'A' - offset + 26) % 26 + 'A');
+				temp[i] = c;
+			}
+			else
+			{
+				temp[i] = c;
+			}
+			
+		}
+		
+		return temp;
 	} // ==========end of decode==========
 
 } // ==========end of class CaesarCypher==========
