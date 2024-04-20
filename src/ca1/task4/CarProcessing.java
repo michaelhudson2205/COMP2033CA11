@@ -28,6 +28,10 @@ public class CarProcessing
 			System.out.println(c);
 		}
 		
+		Car testCar = new Car("Lamborghini", "Revuelto", "Nero Noctis");
+		String result = testCar.toString();
+		System.out.println(result);
+		
 	} // ==========end of psvm==========
 	
 	public Car[] removeDuplicates(Car[] inputArray) 

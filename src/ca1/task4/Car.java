@@ -43,34 +43,34 @@ public class Car
 		return this.model.equals(that.model) && this.colour.equals(that.colour);
 	} // ==========end of equals==========
 
-	public String getMake()
-	{
-		return make;
-	}
-
-	public String getModel()
-	{
-		return model;
-	}
-
-	public String getColour()
-	{
-		return colour;
-	}
-
-	public void setMake(String make)
-	{
-		this.make = make;
-	}
-
-	public void setModel(String model)
-	{
-		this.model = model;
-	}
-
-	public void setColour(String colour)
-	{
-		this.colour = colour;
-	}
+//	public String getMake()
+//	{
+//		return make;
+//	}
+//
+//	public String getModel()
+//	{
+//		return model;
+//	}
+//
+//	public String getColour()
+//	{
+//		return colour;
+//	}
+//
+//	public void setMake(String make)
+//	{
+//		this.make = make;
+//	}
+//
+//	public void setModel(String model)
+//	{
+//		this.model = model;
+//	}
+//
+//	public void setColour(String colour)
+//	{
+//		this.colour = colour;
+//	}
 	
 } // ==========end of class Car==========
