@@ -10,6 +10,7 @@ class CarProcessingTest
 
 	@Test
 	void testRemoveDuplicates_2Duplicates_at_Start()
+	// Test that two duplicates at first two places in array are removed.
 	{
 		CarProcessing cp = new CarProcessing();
 		
@@ -29,12 +30,6 @@ class CarProcessingTest
 		
 		Car[] expected = 
 			{ 
-//					new Car("Jeep", "Wrangler", "Blue"),
-//					new Car("Jeep", "Wrangler", "Green"),
-//					new Car("Holden", "Falcon", "Yellow"),
-//					new Car("Honda", "Civic", "Blue"),
-//					new Car("Honda", "Falcon", "Blue"),
-//					new Car("Honda", "Civic", "Purple")
 					input[2],
 					input[3],
 					input[4],
@@ -45,12 +40,12 @@ class CarProcessingTest
 		
 		Car[] result = cp.removeDuplicates(input);
 		
-//		assertEquals(expected, result);
 		assertArrayEquals(expected, result);
 	}
 	
 	@Test
 	void testRemoveDuplicates_2Duplicates_at_End()
+	// Test that two duplicates at last two places in array are removed.
 	{
 		CarProcessing cp = new CarProcessing();
 		
@@ -70,12 +65,6 @@ class CarProcessingTest
 		
 		Car[] expected = 
 			{ 
-//					new Car("Jeep", "Wrangler", "Blue"),
-//					new Car("Jeep", "Wrangler", "Green"),
-//					new Car("Holden", "Falcon", "Yellow"),
-//					new Car("Honda", "Civic", "Blue"),
-//					new Car("Honda", "Falcon", "Blue"),
-//					new Car("Honda", "Civic", "Purple")
 					input[0],
 					input[1],
 					input[2],
@@ -86,12 +75,12 @@ class CarProcessingTest
 		
 		Car[] result = cp.removeDuplicates(input);
 		
-//		assertEquals(expected, result);
 		assertArrayEquals(expected, result);
 	}
 	
 	@Test
 	void testRemoveDuplicates_0Duplicates()
+	// Test that entire array is returned when there are no duplicates.
 	{
 		CarProcessing cp = new CarProcessing();
 		
@@ -111,12 +100,6 @@ class CarProcessingTest
 		
 		Car[] expected = 
 			{ 
-//					new Car("Jeep", "Wrangler", "Blue"),
-//					new Car("Jeep", "Wrangler", "Green"),
-//					new Car("Holden", "Falcon", "Yellow"),
-//					new Car("Honda", "Civic", "Blue"),
-//					new Car("Honda", "Falcon", "Blue"),
-//					new Car("Honda", "Civic", "Purple")
 					input[0],
 					input[1],
 					input[2],
@@ -129,12 +112,12 @@ class CarProcessingTest
 		
 		Car[] result = cp.removeDuplicates(input);
 		
-//		assertEquals(expected, result);
 		assertArrayEquals(expected, result);
 	}
 	
 	@Test
 	void testRemoveDuplicates_All_Duplicates()
+	// Test that empty array returned when all input elements are duplicates.
 	{
 		CarProcessing cp = new CarProcessing();
 		
@@ -154,25 +137,11 @@ class CarProcessingTest
 		
 		Car[] expected = 
 			{ 
-//					new Car("Jeep", "Wrangler", "Blue"),
-//					new Car("Jeep", "Wrangler", "Green"),
-//					new Car("Holden", "Falcon", "Yellow"),
-//					new Car("Honda", "Civic", "Blue"),
-//					new Car("Honda", "Falcon", "Blue"),
-//					new Car("Honda", "Civic", "Purple")
-//					input[0],
-//					input[1],
-//					input[2],
-//					input[3],
-//					input[4],
-//					input[5],
-//					input[6],
-//					input[7]
+
 			};
 		
 		Car[] result = cp.removeDuplicates(input);
 		
-//		assertEquals(expected, result);
 		assertArrayEquals(expected, result);
 	}
 

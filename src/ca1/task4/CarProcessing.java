@@ -1,3 +1,9 @@
+// Name:    Michael Hudson
+// Email:   hudmy010@mymail.unisa.edu.au
+// S_ID:    110369255
+// jre:     17.0.10.v20240120-1143
+// Eclipse: 2024-03 (4.31.0)
+
 package ca1.task4;
 
 public class CarProcessing 
@@ -28,6 +34,7 @@ public class CarProcessing
 			System.out.println(c);
 		}
 		
+		// Testing toString method.
 		Car testCar = new Car("Lamborghini", "Revuelto", "Nero Noctis");
 		String result = testCar.toString();
 		System.out.println(result);

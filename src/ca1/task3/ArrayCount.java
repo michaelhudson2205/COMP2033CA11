@@ -1,14 +1,17 @@
+// Name:    Michael Hudson
+// Email:   hudmy010@mymail.unisa.edu.au
+// S_ID:    110369255
+// jre:     17.0.10.v20240120-1143
+// Eclipse: 2024-03 (4.31.0)
+
 package ca1.task3;
 
 public class ArrayCount 
 {
-//	public static void main(String[] args)
-//	{
-//		// Driver code for testing (**not unit testing**)
-//		String[] arr1 = {"Apple", "Banana", "Orange", "Apple", "Pear", "Orange", "Pear", "Pear"};
-//		System.out.println(count(arr1, "Grape"));
-//	} //==========end of psvm==========
+	// Note: There is no psvm for this task.
 	
+	// A method for counting the number of occurrences
+	// of a given target within an array.
 	public int count(String[] array, String target) 
 	{
 		int res = 0;

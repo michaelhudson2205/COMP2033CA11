@@ -1,14 +1,22 @@
+// Name:    Michael Hudson
+// Email:   hudmy010@mymail.unisa.edu.au
+// S_ID:    110369255
+// jre:     17.0.10.v20240120-1143
+// Eclipse: 2024-03 (4.31.0)
+
 package ca1.task4;
 
 import java.util.Objects;
 
 public class Car 
 {
+	// instance variables
 	private String make;
 	private String model;
 	private String colour;
 	
 	
+	// constructor
 	public Car(String make, String model, String colour) 
 	{
 		this.make = make;
@@ -16,61 +24,22 @@ public class Car
 		this.colour = colour;
 	} // ==========end of Car constructor==========
 
+	// instance method: overrides the class method.
 	public String toString()
 	{
 		return make + ", " + model + ", " + colour;
 	} // ==========end of toString==========
 
+	// instance method: overrides the class method.
 	public int hashCode()
 	{
 		return Objects.hash(colour, model);
-	}
-
-//	public boolean equals(Object obj)
-//	{
-//		if (this == obj)
-//			return true;
-//		if (obj == null)
-//			return false;
-//		if (getClass() != obj.getClass())
-//			return false;
-//		Car other = (Car) obj;
-//		return Objects.equals(colour, other.colour) && Objects.equals(model, other.model);
-//	}
+	} // ==========end of hashCode==========
 	
+	// instance method: overrides the class method.
 	public boolean equals(Car that)
 	{
 		return this.model.equals(that.model) && this.colour.equals(that.colour);
 	} // ==========end of equals==========
-
-//	public String getMake()
-//	{
-//		return make;
-//	}
-//
-//	public String getModel()
-//	{
-//		return model;
-//	}
-//
-//	public String getColour()
-//	{
-//		return colour;
-//	}
-//
-//	public void setMake(String make)
-//	{
-//		this.make = make;
-//	}
-//
-//	public void setModel(String model)
-//	{
-//		this.model = model;
-//	}
-//
-//	public void setColour(String colour)
-//	{
-//		this.colour = colour;
-//	}
 	
 } // ==========end of class Car==========

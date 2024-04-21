@@ -12,7 +12,8 @@ class CaesarCypherTest {
 	}
 
 	@Test
-	void testEncode() {
+	void testEncode() // Test that the raw input string is encoded correctly.
+	{
 		CaesarCypher cc = new CaesarCypher();
 		
 		char[] input = {'a', 'b', 'c'};
@@ -22,7 +23,8 @@ class CaesarCypherTest {
 	}
 
 	@Test
-	void testDecode() {
+	void testDecode() // Test that the encoded input string is decoded correctly.
+	{
 		CaesarCypher cc = new CaesarCypher();
 		
 	

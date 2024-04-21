@@ -1,32 +1,18 @@
-// Michael Hudson
+// Name:    Michael Hudson
+// Email:   hudmy010@mymail.unisa.edu.au
+// S_ID:    110369255
+// jre:     17.0.10.v20240120-1143
+// Eclipse: 2024-03 (4.31.0)
 
 package ca1.task1;
 
 public class CaesarCypher
 {
+	
+	// Note: There is no psvm for this task.
 
-	public static void main(String[] args)
-	{
-		// Driver code for testing (**not unit testing**)
-		
-		char [] message_to_encode = {'a', 'b', 'c',};
-		char [] encoded_massage = encode(message_to_encode, 2);
-		for (char c : encoded_massage)
-		{
-			System.out.print(c);
-		}
-		
-		System.out.println();
-		
-		char [] message_to_decode = {'c', 'd', 'e'};
-		char [] decoded_massage = decode(message_to_decode, 2);
-		for (char c : decoded_massage)
-		{
-			System.out.print(c);
-		}
-	} // ==========end of psvm==========
-
-	public static char[] encode(char[] input, int offset)
+	// A method for encoding
+	public char[] encode(char[] input, int offset)
 	{
 		char[] temp = new char[input.length];
 		for (int i = 0; i < input.length; i++)
@@ -52,7 +38,8 @@ public class CaesarCypher
 		return temp;
 	} // ==========end of encode==========
 	
-	public static char[] decode(char[] input, int offset)
+	// A method for decoding
+	public char[] decode(char[] input, int offset)
 	{
 		char[] temp = new char[input.length];
 		for (int i = 0; i < input.length; i++)

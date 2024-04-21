@@ -8,7 +8,7 @@ class ArrayCountTest
 {
 
 	@Test
-	void testCount0()
+	void testCount0() // Test for zero occurrences of the target.
 	{
 		ArrayCount ac = new ArrayCount();
 		
@@ -19,7 +19,7 @@ class ArrayCountTest
 	}
 	
 	@Test
-	void testCount1()
+	void testCount1() // Test for one occurrence of the target.
 	{
 		ArrayCount ac = new ArrayCount();
 		
@@ -30,7 +30,7 @@ class ArrayCountTest
 	}
 	
 	@Test
-	void testCount2()
+	void testCount2() // Test for two occurrences of the target.
 	{
 		ArrayCount ac = new ArrayCount();
 		

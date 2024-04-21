@@ -8,7 +8,7 @@ class CarTest
 {
 
 	@Test
-	void testToString()
+	void testToString() // Test that toString method returns correct string.
 	{
 		// given (arrange)
 		Car testCar1 = new Car("Lamborghini", "Revuelto", "Nero Noctis");
@@ -23,7 +23,7 @@ class CarTest
 	}
 
 	@Test
-	void testEqualsCar_should_ReturnTrue()
+	void testEqualsCar_should_ReturnTrue() // Test that equals method correctly returns true.
 	{
 		// given
 		Car testCar2 = new Car("Chevrolet", "Suburban", "Blue");
@@ -38,7 +38,7 @@ class CarTest
 	}
 	
 	@Test
-	void testEqualsCar_should_ReturnFalse()
+	void testEqualsCar_should_ReturnFalse() // Test that equals method correctly returns false.
 	{
 		// given
 		Car testCar2 = new Car("Chevrolet", "Suburban", "Green");
